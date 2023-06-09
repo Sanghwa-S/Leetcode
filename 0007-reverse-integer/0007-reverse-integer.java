@@ -8,11 +8,12 @@ class Solution {
         while(x>0) {
             int remains = x%10;
             x= x/10;
-            result += remains*Math.pow(10,mul);
             
             if(result > Integer.MAX_VALUE){
                 return 0;
-            }
+            }    
+            
+            result += remains*Math.pow(10,mul);
             mul--;
         }
         
